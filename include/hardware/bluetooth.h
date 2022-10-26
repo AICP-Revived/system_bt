@@ -472,7 +472,8 @@ typedef struct {
    * The |is_niap_mode| flag inits the adapter in NIAP mode.
    * The |is_atv| flag indicates whether the local device is an Android TV
    */
-  int (*init)(bt_callbacks_t* callbacks, bool guest_mode, bool is_niap_mode, bool is_atv);
+  int (*init)(bt_callbacks_t* callbacks, bool guest_mode,
+              bool is_niap_mode, bool is_atv);
 
   /** Enable Bluetooth. */
   int (*enable)();
